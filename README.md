@@ -39,3 +39,7 @@ module.exports = {
 產生在根目錄底下的coverage/Icov-report/index.html，拖曳到瀏覽器就可以看了例如：
 
 ![請看圖](./README-pic1.png "覆蓋率報告圖例")
+
+
+## cocos creator會對assets底下的資源做管理，應當ignore
+![請看圖](./README-pic2.png "如何設置ignore")
