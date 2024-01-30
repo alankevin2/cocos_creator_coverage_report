@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1704428014102" clover="3.2.0">
-  <project timestamp="1704428014102" name="All files">
-    <metrics statements="13" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="2" elements="21" coveredelements="17" complexity="0" loc="13" ncloc="13" packages="2" files="2" classes="2"/>
+<coverage generated="1706579487290" clover="3.2.0">
+  <project timestamp="1706579487290" name="All files">
+    <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="2" elements="22" coveredelements="18" complexity="0" loc="14" ncloc="14" packages="2" files="2" classes="2"/>
     <package name="components">
-      <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="MySceneMain.ts" path="/Users/alan_yeh/Documents/CoverageTest/assets/components/MySceneMain.ts">
-        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -13,6 +13,7 @@
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
     </package>
     <package name="logic">

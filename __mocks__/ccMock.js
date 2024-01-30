@@ -16,13 +16,18 @@ const _decorator = {
     // 您還可以添加其他 _decorator 提供的裝飾器模擬
 };
 
-// 在您的 Jest 測試文件或設置中
 const cc = {
     // 這裡您可以添加模擬的 'cc' 對象的屬性或方法
     Node: jest.fn(),
-    // ...其他模擬的屬性或方法
     Component: jest.fn(),
+    Sprite: jest.fn(),
+    SomeClass: jest.fn(() => {
+        someMethod: jest.fn()
+    }),
     _decorator: _decorator
 };
+
+// 繼承類別直接呼叫父類別的class只能這樣mock
+cc.Component.prototype.getComponent = jest.fn();
 
 module.exports = cc;

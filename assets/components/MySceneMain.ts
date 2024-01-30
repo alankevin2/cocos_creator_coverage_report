@@ -1,4 +1,4 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Button, Component, Node, Sprite } from 'cc';
 
 import { State } from '../logic/State';
 
@@ -8,7 +8,7 @@ const { ccclass, property } = _decorator;
 export class MySceneMain extends Component {
     start() {
         const state = new State()
-        console.log(state.test(1234));
+        alert(state.test(1234));
     }
 
     update(deltaTime: number) {
@@ -16,6 +16,7 @@ export class MySceneMain extends Component {
     }
 
     canWeTestThis(): boolean {
+        const a: Sprite = this.getComponent(Sprite);
         return true
     }
 }
