@@ -32,13 +32,17 @@ stages:
   image: node:latest
   stage: coverage
   script:
+    - npm test
     - pwd
     - cat ./coverage/lcov-report/index.html
   # coverage: /[0-9]+.[0-9]+%.*\n.*>Lines/
   coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
-  artifacts:
+  artifacts:  
+    when: always
     paths:
-      - ./coverage/lcov.info
+      - coverage/
+    reports:
+      junit: clover.xml
 
 coverage:originmain:
   <<: *coverage_configuration
