@@ -29,17 +29,17 @@ stages:
 ############
 
 .coverage_template: &coverage_configuration
-  image: node:6.9.5-alpine
+  image: node:latest
   stage: coverage
   script:
+    - npm test
     - pwd
     - cat ./coverage/lcov-report/index.html
-  coverage: /[0-9]+.[0-9]+%.*\n.*>Lines/
+  # coverage: /[0-9]+.[0-9]+%.*\n.*>Lines/
+  coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
   artifacts:
-    reports:
-      coverage_report:
-        coverage_format: cobertura
-        path: ./coverage/lcov-report
+    paths:
+      - ./coverage/lcov.info
 
 coverage:originmain:
   <<: *coverage_configuration
