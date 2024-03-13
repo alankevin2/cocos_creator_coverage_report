@@ -34,7 +34,8 @@ stages:
   script:
     - pwd
     - cat ./coverage/lcov-report/index.html
-    - echo 'Lines: 88.88%'
+    - echo "Lines:\s88.88%"
+    - echo "12345"
   # coverage: /[0-9]+.[0-9]+%.*\n.*>Lines/
   coverage: '/^\s*Lines:\s*\d+.\d+\%/'
   # coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
