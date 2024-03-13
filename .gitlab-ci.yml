@@ -29,7 +29,7 @@ stages:
 ############
 
 .coverage_template: &coverage_configuration
-  image: node:latest
+  image: node:18.19.1-alpine3.18
   stage: coverage
   script:
     - npm i
