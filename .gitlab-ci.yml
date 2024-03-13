@@ -34,17 +34,11 @@ stages:
   script:
     - npm i -g istanbul-combine
     - istanbul-combine -d coverage -p summary ./coverage/coverage-final.json
-    # istanbul-combine -d coverage -p summary -r lcov -r html coverage/coverage-a.json coverage/coverage-b.json /coverage/*.json
-    # - istanbul report --dir coverage --include coverage/**/coverage-final.json lcov
-  # coverage: /[0-9]+.[0-9]+%.*\n.*>Lines/
-  coverage: '/^\s*Lines:\s*\d+.\d+\%/'
-  # coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
+  coverage:  /^Lines\s*:\s*([^%]+)/
   artifacts:  
     when: always
     paths:
       - coverage/
-    # reports:
-    #   junit: ./coverage/lcov-report/index.html
 
 coverage:originmain:
   <<: *coverage_configuration
