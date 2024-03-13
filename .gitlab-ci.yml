@@ -32,12 +32,12 @@ stages:
   image: node:latest
   stage: coverage
   script:
-    - pwd
-    - cat ./coverage/lcov-report/index.html
-    - echo 'Lines:88.88%'
-    - echo "12345"
+    - npm i -g istanbul-combine
+    - istanbul-combine -p summary ./coverage/coverage-final.json
+    # istanbul-combine -d coverage -p summary -r lcov -r html coverage/coverage-a.json coverage/coverage-b.json /coverage/*.json
+    # - istanbul report --dir coverage --include coverage/**/coverage-final.json lcov
   # coverage: /[0-9]+.[0-9]+%.*\n.*>Lines/
-  coverage: '/^\s*Lines:\d+.\d+\%/'
+  coverage: '/^\s*Lines:\s*\d+.\d+\%/'
   # coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
   artifacts:  
     when: always
