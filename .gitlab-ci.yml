@@ -43,7 +43,6 @@ stages:
 
 coverage:originmain:
   <<: *coverage_configuration
-  variables: *variables_originmain
   rules:
     - <<: *trigger_main
   tags:
