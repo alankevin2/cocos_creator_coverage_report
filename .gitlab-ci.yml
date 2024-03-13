@@ -34,14 +34,14 @@ stages:
   script:
     - pwd
     - cat ./coverage/lcov-report/index.html
-  # coverage: /[0-9]+.[0-9]+%.*\n.*>Lines/
-  coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
+  coverage: /[0-9]+.[0-9]+%.*\n.*>Lines/
+  # coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
   artifacts:  
     when: always
     paths:
       - coverage/
     reports:
-      junit: ./coverage/clover.xml
+      junit: ./coverage/lcov-report/index.html
 
 coverage:originmain:
   <<: *coverage_configuration
