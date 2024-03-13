@@ -32,8 +32,10 @@ stages:
   image: node:latest
   stage: coverage
   script:
-    - npm i -g istanbul-combine
-    - istanbul-combine -d coverage -p summary ./coverage/coverage-final.json
+    - npm i
+    - npm run coverage
+    # - npm i -g istanbul-combine
+    # - istanbul-combine -d coverage -p summary ./coverage/coverage-final.json
   coverage: /^Lines\s*:\s*([^%]+)/
   # artifacts:  
   #   when: always
