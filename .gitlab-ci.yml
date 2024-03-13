@@ -33,6 +33,7 @@ stages:
   stage: coverage
   script:
     - npm i
+    - npm i -g nyc
     - npm run coverage
     # - npm i -g istanbul-combine
     # - istanbul-combine -d coverage -p summary ./coverage/coverage-final.json
