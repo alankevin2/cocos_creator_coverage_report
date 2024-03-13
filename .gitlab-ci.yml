@@ -38,7 +38,7 @@ stages:
   artifacts:
     reports:
       coverage_report:
-        coverage_format: lcov
+        coverage_format: cobertura
         path: ./coverage/lcov-report
 
 coverage:originmain:
