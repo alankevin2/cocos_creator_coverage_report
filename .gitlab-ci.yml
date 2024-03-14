@@ -36,14 +36,14 @@ stages:
     - rm package-lock.json
     - rm -rf node_modules
     - npm i
+    # 執行測試
     - npm run test
-    # - npm i -g istanbul-combine
-    # - istanbul-combine -d coverage -p summary ./coverage/coverage-final.json
+    - ls coverage
   coverage: /^Lines\s*:\s*([^%]+)/
-  # artifacts:  
-  #   when: always
-  #   paths:
-  #     - coverage/
+  artifacts:  
+    when: always
+    paths:
+      - coverage/
 
 coverage:originmain:
   <<: *coverage_configuration
