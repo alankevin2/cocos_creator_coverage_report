@@ -37,7 +37,7 @@ stages:
     - rm -rf node_modules
     - npm i
     # 執行測試
-    - tsc --version
+    - npx tsc --version
     - npm run test
     - ls coverage
   coverage: /^Lines\s*:\s*([^%]+)/
