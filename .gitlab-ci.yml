@@ -32,8 +32,12 @@ stages:
   image: node:18.19.1-alpine3.18
   stage: coverage
   script:
-    - npm i -g nyc
+    # 重裝 module
+    - rm package-lock.json
+    - rm -rf node_modules
     - npm i
+    # 安裝 nyc
+    - npm i -g nyc
     - npm run coverage
     # - npm i -g istanbul-combine
     # - istanbul-combine -d coverage -p summary ./coverage/coverage-final.json
