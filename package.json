@@ -7,7 +7,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --config=jest.config.aaa.js --coverage --coverageReporters='text-summary' --coverageReporters='lcov'"
+    "test": "jest --config=jest.config.js --coverage --coverageReporters='text-summary' --coverageReporters='lcov'"
   },
   "author": "",
   "license": "ISC",
