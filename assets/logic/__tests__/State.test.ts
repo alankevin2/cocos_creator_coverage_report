@@ -14,11 +14,6 @@ describe('Math Functions', () => {
     expect(new State().test(3)).toBe('3');
   });
 
-  // test('give 4 get \'4\'', () => {
-  //     expect(new State().test(4)).toBe('4');
-  // });
-
-
   test('give any number but 1 or 2 or 3 get -1', () => {
     expect(new State().test(9999)).toBe('-1')
   });
