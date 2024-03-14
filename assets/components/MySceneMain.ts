@@ -16,7 +16,6 @@ export class MySceneMain extends Component {
     }
 
     canWeTestThis(): boolean {
-        const a: Sprite = cc.prototype.getComponent(this, Sprite); // Use the getComponent method from cc module
         return true
     }
 }
