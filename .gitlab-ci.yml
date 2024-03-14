@@ -33,11 +33,11 @@ stages:
   stage: coverage
   script:
     # 重裝 module
-    - tsc --version
     - rm package-lock.json
     - rm -rf node_modules
     - npm i
     # 執行測試
+    - tsc --version
     - npm run test
     - ls coverage
   coverage: /^Lines\s*:\s*([^%]+)/
