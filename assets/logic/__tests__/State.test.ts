@@ -15,7 +15,7 @@ describe('Math Functions', () => {
     });
 
     test('give 4 get \'4\'', () => {
-        expect(new State().test(1)).toBe('4');
+        expect(new State().test(4)).toBe('4');
     });
 
 
