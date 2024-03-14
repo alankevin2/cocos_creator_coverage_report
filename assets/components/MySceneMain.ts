@@ -1,4 +1,4 @@
-import { _decorator, Button, Component, Node, Sprite } from 'cc';
+import { _decorator, Button, Component, Node, Sprite } from '../../__mocks__/ccMock';
 
 import { State } from '../logic/State';
 
@@ -12,7 +12,7 @@ export class MySceneMain extends Component {
     }
 
     update(deltaTime: number) {
-        
+
     }
 
     canWeTestThis(): boolean {
