@@ -29,7 +29,7 @@ stages:
 ############
 
 .coverage_template: &coverage_configuration
-  image: node:18.19.1-alpine3.18
+  image: node:18-alpine3.18
   stage: coverage
   script:
     # 重裝 module
