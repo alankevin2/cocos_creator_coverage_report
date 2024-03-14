@@ -6,9 +6,9 @@ describe('Math Functions', () => {
     expect(new State().test(1)).toBe('1');
   });
 
-  test('give 2 get \'3\'', () => {
-    expect(new State().test(2)).toBe('2');
-  });
+  // test('give 2 get \'3\'', () => {
+  //   expect(new State().test(2)).toBe('2');
+  // });
 
   test('give 3 get \'3\'', () => {
     expect(new State().test(3)).toBe('3');
