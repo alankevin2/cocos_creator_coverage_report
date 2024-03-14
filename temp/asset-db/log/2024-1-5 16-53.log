@@ -1,0 +1,20 @@
+2024-1-5 16:53:07-log: Cannot access game frame or container.
+2024-1-5 16:53:08-debug: asset-db:require-engine-code (1666ms)
+2024-1-5 16:53:08-log: Cocos Creator v3.8.1
+2024-1-5 16:53:09-debug: [Assets Memory track]: asset-db-plugin-enable: project start:93.92MB, end 96.95MB, increase: 3.03MB
+2024-1-5 16:53:09-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:91.63MB, end 96.96MB, increase: 5.32MB
+2024-1-5 16:53:09-debug: [Assets Memory track]: asset-db-plugin-register: engine-extends start:93.75MB, end 96.95MB, increase: 3.20MB
+2024-1-5 16:53:08-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:19.93MB, end 91.62MB, increase: 71.69MB
+2024-1-5 16:53:09-debug: [Assets Memory track]: asset-db-plugin-register: programming start:92.27MB, end 93.70MB, increase: 1.43MB
+2024-1-5 16:53:09-debug: asset-db:worker-init: initPlugin (257ms)
+2024-1-5 16:53:09-debug: [Assets Memory track]: asset-db:worker-init start:19.93MB, end 97.01MB, increase: 77.08MB
+2024-1-5 16:53:09-debug: Run asset db hook engine-extends:beforePreStart ...
+2024-1-5 16:53:09-debug: Run asset db hook programming:beforePreStart success!
+2024-1-5 16:53:09-debug: Run asset db hook engine-extends:beforePreStart success!
+2024-1-5 16:53:09-debug: Run asset db hook programming:beforePreStart ...
+2024-1-5 16:53:10-debug: asset-db:worker-init (3369ms)
+2024-1-5 16:53:10-debug: asset-db-hook-programming-beforePreStart (857ms)
+2024-1-5 16:53:10-debug: asset-db-hook-engine-extends-beforePreStart (857ms)
+2024-1-5 16:53:10-debug: Preimport db internal success
+2024-1-5 16:53:10-debug: Preimport db assets success
+2024-1-5 16:53:10-debug: Run asset db hook programming:afterPreStart ...
