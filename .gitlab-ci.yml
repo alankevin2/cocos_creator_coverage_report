@@ -33,7 +33,7 @@ stages:
   stage: coverage
   script:
     # 重裝 module
-    - ls
+    - tsc --version
     - rm package-lock.json
     - rm -rf node_modules
     - npm i
