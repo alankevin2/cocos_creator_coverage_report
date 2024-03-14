@@ -36,9 +36,7 @@ stages:
     - rm package-lock.json
     - rm -rf node_modules
     - npm i
-    # 安裝 nyc
-    - npm i -g nyc
-    - npm run coverage
+    - npm run test
     # - npm i -g istanbul-combine
     # - istanbul-combine -d coverage -p summary ./coverage/coverage-final.json
   coverage: /^Lines\s*:\s*([^%]+)/
