@@ -1,4 +1,4 @@
-import { _decorator, Button, Component, Node, Sprite } from '../../__mocks__/ccMock';
+import { _decorator, Button, Component, Node, Sprite, cc } from '../../__mocks__/ccMock';
 
 import { State } from '../logic/State';
 
@@ -16,7 +16,7 @@ export class MySceneMain extends Component {
     }
 
     canWeTestThis(): boolean {
-        const a: Sprite = this.prototype.getComponent(Sprite);
+        const a: Sprite = cc.getComponent(this, Sprite); // Use the getComponent method from cc module
         return true
     }
 }
