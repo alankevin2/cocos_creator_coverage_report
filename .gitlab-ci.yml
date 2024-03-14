@@ -32,6 +32,7 @@ stages:
   image: node:18-alpine3.18
   stage: coverage
   script:
+    - ls
     # 重裝 module
     - rm package-lock.json
     - rm -rf node_modules
