@@ -16,7 +16,7 @@ export class MySceneMain extends Component {
     }
 
     canWeTestThis(): boolean {
-        const a: Sprite = this.getComponent(Sprite);
+        const a: Sprite = this.prototype.getComponent(Sprite);
         return true
     }
 }
