@@ -16,6 +16,7 @@ export class MySceneMain extends Component {
     }
 
     canWeTestThis(): boolean {
+        console.log(window.navigator.userAgent);
         const a: Sprite = this.getComponent(Sprite); // Use the getComponent method from cc module
         return true
     }

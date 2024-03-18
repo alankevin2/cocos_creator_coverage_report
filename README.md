@@ -10,8 +10,9 @@ npm run test
 - npm i --save-dev jest
 - npm i --save-dev ts-jest
 - npm i --save-dev @types/jest
-
-## package.json新增便捷的script，已變執行 npm run test
+- npm i --save-dev jest-environment-jsdom
+  
+## package.json新增便捷的script，以便執行 npm run test
 
 詳見package.json中的scripts: { ... }
 
@@ -21,7 +22,7 @@ npm run test
 ```js
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'node', // 用node運行，縱使專案實際上跑在browser
+  testEnvironment: 'jsdom',
   collectCoverage: true, // 要自己開啟才會產生coverage報告，目錄在coverage/Icov-report
   roots: ['<rootDir>/assets'], // 預設通常是src，但在cocos我們指向assets，當然你也可以只對 assets/scripts/之類的
   transform: { // 不確定，但是tsx印象中是一種模板寫法，我們用不到，測試過移除也可以跑，但我還是保留
